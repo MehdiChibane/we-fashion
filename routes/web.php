@@ -17,3 +17,6 @@ Route::get('/', [\App\Http\Controllers\IndexController::class,'index']);
 Route::get('/a-propos', [\App\Http\Controllers\AproposController::class,'index'])->name('a-propos');
 Route::get('/service', [\App\Http\Controllers\ServiceController::class,'index'])->name('service');
 Route::get('/contact', [\App\Http\Controllers\ContactController::class,'index'])->name('contact');
+Route::get('/signup', [\App\Http\Controllers\SignupController::class,'index'])->name('signup');
+Route::get('/login', [\App\Http\Controllers\LoginController::class,'index'])->name('login');
+
