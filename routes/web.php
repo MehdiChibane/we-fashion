@@ -15,3 +15,5 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', [\App\Http\Controllers\IndexController::class,'index']);
 Route::get('/a-propos', [\App\Http\Controllers\AproposController::class,'index'])->name('a-propos');
+Route::get('/comment/{id}', [\App\Http\Controllers\IndexController::class,'details'])->name('details');
+Route::get('/delete/{id}', [\App\Http\Controllers\IndexController::class,'deleteComment'])->name('delete');
