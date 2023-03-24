@@ -1,6 +1,6 @@
 @extends('default')
 @section('title')
-   Service
+   Login
 @endsection
 
 @section('navbar')

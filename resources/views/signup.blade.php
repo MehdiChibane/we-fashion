@@ -1,6 +1,6 @@
 @extends('default')
 @section('title')
-   Service
+   SignUp
 @endsection
 
 @section('navbar')
