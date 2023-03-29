@@ -14,9 +14,17 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', [\App\Http\Controllers\IndexController::class,'index']);
-Route::get('/a-propos', [\App\Http\Controllers\AproposController::class,'index'])->name('a-propos');
 Route::get('/comment/{id}', [\App\Http\Controllers\IndexController::class,'details'])->name('details');
 Route::get('/delete/{id}', [\App\Http\Controllers\IndexController::class,'deleteComment'])->name('delete');
+
+// Post
+Route::get('/posts', [\App\Http\Controllers\PostController::class,'index'])->name('posts');
+Route::get('/posts/details/{id}', [\App\Http\Controllers\PostController::class,'details'])->name('detailsPost');
+Route::get('/delete/{id}', [\App\Http\Controllers\PostController::class,'delete'])->name('deletePost');
+
+
+
+Route::get('/a-propos', [\App\Http\Controllers\AproposController::class,'index'])->name('a-propos');
 Route::get('/a-propos', [\App\Http\Controllers\AproposController::class,'index'])->name('a-propos');
 Route::get('/service', [\App\Http\Controllers\ServiceController::class,'index'])->name('service');
 Route::get('/contact', [\App\Http\Controllers\ContactController::class,'index'])->name('contact');
